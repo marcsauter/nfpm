@@ -115,6 +115,7 @@ func buildRPMMeta(info *nfpm.Info) (*rpmpack.RPMMetaData, error) {
 		Description: info.Description,
 		Version:     info.Version,
 		Release:     defaultTo(info.Release, "1"),
+		Epoch:       defaultTo(info.Epoch, "0"),
 		Arch:        info.Arch,
 		OS:          info.Platform,
 		Licence:     info.License,
